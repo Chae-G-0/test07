@@ -7,6 +7,7 @@
 }
 
 body {
+    color: #333;
     padding-top: 70px;
 }
 
@@ -23,6 +24,7 @@ section {
 h2 {
     font-size: 30px;
     font-weight: 500;
+    margin: 0 0 10px 0;
 }
 
 header {
@@ -66,6 +68,10 @@ header {
 }
 
 .mainVisual {
+}
+
+.mainVisual {
+    position: relative;
     padding: 0;
 }
 
@@ -87,7 +93,7 @@ header {
 .swiper-pagination-bullet {
     width: 10px;
     height: 10px;
-    margin: 0 3px 20px 3px !important;
+    margin: 0 3px 60px 3px !important;
     background: transparent;
     border: 1px solid #ddd;
     opacity: 1;
@@ -98,4 +104,30 @@ header {
     width: 30px;
     border-radius: 5px;
     background: #ddd;
+}
+
+.mainVisual .scr {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 30px;
+    height: 30px;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    z-index: 998;
+    animation: scr 1s infinite;
+}
+
+@keyframes scr {
+    to {
+        bottom: 30px;
+    }
+}
+
+.mainStory {
+}
+
+.mainStory .container {
+    display: block;
 }
