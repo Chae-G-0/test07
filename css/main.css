@@ -19,12 +19,21 @@ body {
 
 section {
     padding: 100px 0;
+    border-bottom: 1px solid #ddd;
 }
 
 h2 {
-    font-size: 30px;
-    font-weight: 500;
-    margin: 0 0 10px 0;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 35px;
+    font-weight: 700;
+    margin: 0 0 20px 2px;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: -0.025em;
+    line-height: 1.4;
 }
 
 header {
@@ -76,17 +85,17 @@ header {
 }
 
 .mainVisual .item01 {
-    background: url(../img/mainVisual01.jpg) no-repeat bottom 10% center / cover;
+    background: url(../img/mainVisual06.jpg) no-repeat bottom 10% center / cover;
     height: calc(100vh - 70px);
 }
 
 .mainVisual .item02 {
-    background: url(../img/mainVisual02.jpg) no-repeat bottom 20% center / cover;
+    background: url(../img/mainVisual07.jpg) no-repeat bottom 40% center / cover;
     height: calc(100vh - 70px);
 }
 
 .mainVisual .item03 {
-    background: url(../img/mainVisual03.jpg) no-repeat bottom 20% center / cover;
+    background: url(../img/mainVisual04.jpg) no-repeat bottom 10% center / cover;
     height: calc(100vh - 70px);
 }
 
@@ -125,9 +134,121 @@ header {
     }
 }
 
+.mainVisual .slogan {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #333;
+    z-index: 998;
+}
+
+.mainVisual .slogan h2 {
+    font-size: 45px;
+    margin: 0 0 15px 0;
+}
+
+.mainVisual .slogan p {
+    font-size: 16px;
+}
+
 .mainStory {
 }
 
 .mainStory .container {
     display: block;
+}
+
+.mainStory h2 {
+    font-weight: 700;
+}
+
+.mainStory .content {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.mainStory .topLeft {
+    flex: 2;
+}
+
+.mainStory .topLeft .tImg {
+    background: url(../img/mainStory01.jpg) no-repeat bottom 20% center / cover;
+    height: 500px;
+}
+
+.mainStory .topRight {
+    flex: 1;
+}
+
+.mainStory .topRight span {
+    display: inline-block;
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+}
+
+.mainStory .topRight p {
+    margin: 0 0 30px 0;
+}
+
+.mainStory .topRight a {
+    display: inline-block;
+    border: 1px solid #333;
+    font-size: 13px;
+    padding: 8px 20px 6px 20px;
+}
+
+.mainSofa {
+}
+
+.mainSofa {
+    background: #ced4da;
+}
+
+.mainSofa .container {
+    display: block;
+}
+
+.mainSofa .sofa {
+    display: flex;
+    gap: 30px;
+}
+
+.mainSofa .sofa .box .txt {
+    text-align: center;
+}
+
+.mainSofa .sofa figure {
+    position: relative;
+    height: 380px;
+    overflow: hidden;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    margin: 0 0 20px 0;
+    flex: 1;
+    transition: 0.5s;
+}
+
+.mainSofa .sofa figure:hover .down {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.mainSofa .sofa .down {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    opacity: 0;
+}
+
+.mainSofa figure .txt {
+    text-align: center;
+}
+
+.mainSofa h3 {
+    font-size: 17px;
+    font-weight: 500;
 }
