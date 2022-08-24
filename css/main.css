@@ -14,7 +14,6 @@ body {
 .container {
     width: 1200px;
     margin: 0 auto;
-    display: flex;
 }
 
 section {
@@ -52,7 +51,12 @@ header {
 }
 
 .header .container {
+    display: flex;
     justify-content: space-between;
+}
+
+.header h1 {
+    font-size: 0;
 }
 
 .header .Gnb ul,
@@ -157,10 +161,6 @@ header {
 .mainStory {
 }
 
-.mainStory .container {
-    display: block;
-}
-
 .mainStory h2 {
     font-weight: 700;
 }
@@ -209,10 +209,6 @@ header {
     background: #ced4da;
 }
 
-.mainSofa .container {
-    display: block;
-}
-
 .mainSofa .sofa {
     display: flex;
     gap: 30px;
@@ -235,7 +231,6 @@ header {
 
 .mainSofa .sofa figure:hover .down {
     opacity: 1;
-    transition: 0.5s;
 }
 
 .mainSofa .sofa .down {
@@ -243,6 +238,7 @@ header {
     top: -5px;
     left: 0;
     opacity: 0;
+    transition: 0.5s;
 }
 
 .mainSofa .txt {
@@ -258,4 +254,52 @@ header {
 .mainSofa p {
     font-size: 17px;
     font-weight: 500;
+}
+
+.mainDeco .detail {
+    position: relative;
+    background: url(../img/deco01.jpg) no-repeat bottom 30% center / cover;
+    height: 500px;
+    flex: 2;
+}
+
+.mainDeco .fBox {
+    display: flex;
+}
+
+.mainDeco .decoLeft {
+    flex: 1;
+}
+
+.mainDeco .detail div {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    background: rgb(85, 141, 197);
+    border-radius: 50%;
+}
+
+.mainDeco .detail div i {
+    color: #fff;
+    padding: 3px;
+}
+
+.mainDeco .in01 {
+    top: 20%;
+    left: 11%;
+}
+
+.mainDeco .in02 {
+    top: 50%;
+    left: 50%;
+}
+
+.mainDeco .in03 {
+    top: 53%;
+    left: 79%;
+}
+
+.mainDeco .in04 {
+    top: 70%;
+    left: 60%;
 }
