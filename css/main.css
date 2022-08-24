@@ -47,6 +47,7 @@ header {
     height: 70px;
     line-height: 70px;
     background: #fff;
+    border-bottom: 1px solid #ddd;
     z-index: 999;
 }
 
@@ -200,6 +201,91 @@ header {
     border: 1px solid #333;
     font-size: 13px;
     padding: 8px 20px 6px 20px;
+    transition: 0.5s;
+}
+
+.mainStory .topRight a:hover {
+    background: #333;
+    color: #ddd;
+}
+
+.mainDeco {
+}
+
+.mainDeco .detail {
+    position: relative;
+    background: url(../img/deco01.jpg) no-repeat bottom 30% center / cover;
+    height: 500px;
+    flex: 2;
+}
+
+.mainDeco .fBox {
+    position: relative;
+    display: flex;
+}
+
+.mainDeco .decoLeft {
+    flex: 1;
+}
+
+.mainDeco .decoLeft div {
+    position: absolute;
+    inset: 50% auto auto 0;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 350px;
+    border: 1px solid #ddd;
+    opacity: 0;
+    padding: 10px 0;
+    transition: 0.5s;
+}
+
+.mainDeco .decoLeft div.on {
+    opacity: 1;
+}
+
+.mainDeco .decoLeft div h3 {
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+
+.mainDeco .decoLeft div p {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.mainDeco .detail div {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    background: rgb(85, 141, 197);
+    border-radius: 50%;
+}
+
+.mainDeco .detail div i {
+    color: #fff;
+    padding: 3px;
+}
+
+.mainDeco .in01 {
+    top: 20%;
+    left: 11%;
+}
+
+.mainDeco .in02 {
+    top: 50%;
+    left: 50%;
+}
+
+.mainDeco .in03 {
+    top: 53%;
+    left: 79%;
+}
+
+.mainDeco .in04 {
+    top: 70%;
+    left: 60%;
 }
 
 .mainSofa {
@@ -254,52 +340,4 @@ header {
 .mainSofa p {
     font-size: 17px;
     font-weight: 500;
-}
-
-.mainDeco .detail {
-    position: relative;
-    background: url(../img/deco01.jpg) no-repeat bottom 30% center / cover;
-    height: 500px;
-    flex: 2;
-}
-
-.mainDeco .fBox {
-    display: flex;
-}
-
-.mainDeco .decoLeft {
-    flex: 1;
-}
-
-.mainDeco .detail div {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    display: inline-block;
-    background: rgb(85, 141, 197);
-    border-radius: 50%;
-}
-
-.mainDeco .detail div i {
-    color: #fff;
-    padding: 3px;
-}
-
-.mainDeco .in01 {
-    top: 20%;
-    left: 11%;
-}
-
-.mainDeco .in02 {
-    top: 50%;
-    left: 50%;
-}
-
-.mainDeco .in03 {
-    top: 53%;
-    left: 79%;
-}
-
-.mainDeco .in04 {
-    top: 70%;
-    left: 60%;
 }

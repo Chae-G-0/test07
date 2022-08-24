@@ -10,4 +10,15 @@ window.addEventListener("DOMContentLoaded", () => {
             clickable: true,
         },
     });
+
+    const MENU = document.querySelectorAll(".detail div");
+    const TAB = document.querySelectorAll(".decoLeft>div");
+    MENU.forEach((el, idx) => {
+        el.addEventListener("click", () => {
+            MENU.forEach((el) => el.classList.remove("on"));
+            el.classList.add("on");
+            TAB.forEach((el) => el.classList.remove("on"));
+            TAB[idx].classList.add("on");
+        });
+    });
 });
