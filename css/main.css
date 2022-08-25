@@ -459,7 +459,12 @@ header {
 .mainStore h3 {
     font-size: 21px;
     font-weight: 700;
-    margin: 0 0 20px 0;
+    margin: 0 0 30px 0;
+}
+
+.mainStore p {
+    font-size: 15px;
+    margin: 0 0 30px 0;
 }
 
 .mainStore .fBox {
@@ -469,11 +474,11 @@ header {
 }
 
 .mainStore .left {
-    flex: 2;
+    flex: 1;
 }
 
 .mainStore .left figure {
-    background: url(../img/showroom01.jpg) no-repeat center center / cover;
+    background: url(../img/showroom01.jpg) no-repeat center left 40% / cover;
     height: 500px;
 }
 
@@ -481,6 +486,28 @@ header {
     flex: 1;
 }
 
+.mainStore .right table {
+    border-top: 2px solid #333;
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.mainStore .right table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.mainStore .right th {
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.mainStore .right td {
+    padding: 10px 0 10px 10px;
+    font-size: 15px;
+    line-height: 1.2;
+}
 /* 
 
 
