@@ -58,6 +58,7 @@ header {
 
 .header h1 {
     font-size: 0;
+    width: 100px;
 }
 
 .header .Gnb ul,
@@ -76,6 +77,7 @@ header {
 
 .header .icon {
     gap: 15px;
+    width: 100px;
 }
 
 .header .icon i {
@@ -105,7 +107,7 @@ header {
     height: calc(100vh - 70px);
 }
 
-.swiper-pagination-bullet {
+/* .swiper-pagination-bullet {
     width: 10px;
     height: 10px;
     margin: 0 3px 60px 3px !important;
@@ -119,11 +121,11 @@ header {
     width: 30px;
     border-radius: 5px;
     background: #ddd;
-}
+} */
 
 .mainVisual .scr {
     position: absolute;
-    bottom: 40px;
+    bottom: 50px;
     left: 50%;
     transform: translateX(-50%) rotate(45deg);
     width: 30px;
@@ -136,7 +138,7 @@ header {
 
 @keyframes scr {
     to {
-        bottom: 30px;
+        bottom: 40px;
     }
 }
 
@@ -209,6 +211,44 @@ header {
     color: #ddd;
 }
 
+.mainBack {
+}
+
+.mainBack {
+    padding: 0;
+    background: url(../img/pebble26.jpg) no-repeat bottom 30% center/cover fixed;
+    height: 500px;
+}
+
+.mainBack .container {
+    display: flex;
+    justify-content: center;
+}
+
+.mainBack p {
+    overflow: hidden;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 100px 0 0 0;
+}
+
+.mainBack span:nth-child(1) {
+    display: inline-block;
+    transform: translateY(40px);
+    transition: 0.3s;
+}
+
+.mainBack span:nth-child(2) {
+    display: inline-block;
+    transform: translateY(40px);
+    transition: 0.3s 0.3s;
+}
+
+.mainBack.on span {
+    transform: translateY(0);
+}
+
 .mainDeco {
 }
 
@@ -261,6 +301,7 @@ header {
     display: inline-block;
     background: rgb(85, 141, 197);
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .mainDeco .detail div i {
@@ -340,4 +381,124 @@ header {
 .mainSofa p {
     font-size: 17px;
     font-weight: 500;
+}
+
+.mainCS {
+}
+
+.mainCS .fBox {
+    display: flex;
+    align-items: center;
+}
+
+.mainCS .fBox .left {
+    flex: 1;
+}
+
+.mainCS .left p {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.mainCS .fBox .right {
+    flex: 1;
+}
+
+.mainCS .fBox .right a {
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 10px 5px;
+    border-bottom: 1px solid #333;
+}
+
+.mainCS .fBox .right > ul > li {
+    position: relative;
+}
+
+.mainCS .fBox .right > ul > li ul {
+    display: none;
+    position: static;
+    top: 38px;
+    left: 0;
+    width: auto;
+    height: 200px;
+    background: #f6f6f6;
+    font-size: 14px;
+    line-height: 1.4;
+    z-index: 998;
+}
+
+.mainCS .fBox .right > ul > li.on .inner {
+    display: block;
+}
+
+.mainCS .fBox .right > ul > li ul li {
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    padding: 5px 0 5px 10px;
+}
+
+.mainCS .fBox .right > ul > li ul li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 3px;
+    height: 3px;
+    background: #333;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.mainStore {
+}
+
+.mainStore h3 {
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+.mainStore .fBox {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.mainStore .left {
+    flex: 2;
+}
+
+.mainStore .left figure {
+    background: url(../img/showroom01.jpg) no-repeat center center / cover;
+    height: 500px;
+}
+
+.mainStore .right {
+    flex: 1;
+}
+
+/* 
+
+
+
+
+푸터~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+
+*/
+
+.footer {
+}
+
+.footer {
+    padding: 50px 0;
+    background: #333;
 }

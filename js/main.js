@@ -5,10 +5,14 @@ window.addEventListener("DOMContentLoaded", () => {
             delay: 3000,
             disableOnInteraction: false,
         },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
+    });
+
+    const SC = document.querySelectorAll(".active_event");
+    window.addEventListener("scroll", () => {
+        let sct = window.scrollY;
+        SC.forEach((el) => {
+            sct > el.offsetTop - 250 ? el.classList.add("on") : el.classList.remove("on");
+        });
     });
 
     const MENU = document.querySelectorAll(".detail div");
@@ -19,6 +23,17 @@ window.addEventListener("DOMContentLoaded", () => {
             el.classList.add("on");
             TAB.forEach((el) => el.classList.remove("on"));
             TAB[idx].classList.add("on");
+        });
+    });
+
+    const SURVICE = document.querySelectorAll(".mainCS .right>ul>li");
+    const UL = document.querySelectorAll(".mainCS .right>ul>li>inner");
+    SURVICE.forEach((el) => {
+        el.addEventListener("click", () => {
+            SURVICE.forEach((el) => el.classList.remove("on"));
+            el.classList.add("on");
+            UL.forEach((el) => el.classList.remove("on"));
+            UL[idx].classList.add("on");
         });
     });
 });
