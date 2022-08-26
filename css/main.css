@@ -76,12 +76,15 @@ header {
 }
 
 .header .icon {
-    gap: 15px;
+    justify-content: end;
+    gap: 0px;
     width: 100px;
 }
 
 .header .icon i {
     font-size: 21px;
+    line-height: 70px;
+    padding: 0 0 0 10px;
 }
 
 .mainVisual {
