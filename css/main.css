@@ -274,7 +274,7 @@ header {
     transform: translateY(-50%);
     text-align: center;
     width: 350px;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     opacity: 0;
     padding: 10px 0;
     transition: 0.5s;
@@ -293,6 +293,20 @@ header {
 .mainDeco .decoLeft div p {
     font-size: 17px;
     font-weight: 500;
+    margin: 0 0 10px 0;
+}
+
+.mainDeco .decoLeft a {
+    display: inline-block;
+    border: 1px solid #333;
+    font-size: 13px;
+    padding: 8px 20px 6px 20px;
+    transition: 0.5s;
+}
+
+.mainDeco .decoLeft a:hover {
+    background: #333;
+    color: #ddd;
 }
 
 .mainDeco .detail div {
@@ -525,7 +539,31 @@ header {
     background: #ced4da;
 }
 
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .footer h2 {
     text-align: left;
     font-size: 0;
+}
+
+.footer h2 img {
+    height: 40px;
+}
+
+.footer dl {
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.footer dt {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.footer .sns i {
+    font-size: 17px;
+    padding: 0 3px;
 }
