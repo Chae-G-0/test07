@@ -233,7 +233,7 @@ header {
     color: #fff;
     font-size: 30px;
     font-weight: 500;
-    padding: 100px 0 0 0;
+    padding: 225px 0 0 0;
 }
 
 .mainBack span:nth-child(1) {
@@ -268,12 +268,13 @@ header {
 }
 
 .mainDeco .decoLeft {
+    border: 1px solid #999;
     flex: 1;
 }
 
 .mainDeco .decoLeft div {
     position: absolute;
-    inset: 50% auto auto 0;
+    inset: 50% auto auto 25px;
     transform: translateY(-50%);
     text-align: center;
     width: 350px;
@@ -299,15 +300,20 @@ header {
     margin: 0 0 10px 0;
 }
 
-.mainDeco .decoLeft a {
+.mainDeco .decoLeft figure a {
+    border: 0;
+    margin: 0 0 20px 0;
+}
+
+.mainDeco .decoLeft div > a {
     display: inline-block;
-    border: 1px solid #333;
+    border: 1px solid #999;
     font-size: 13px;
     padding: 8px 20px 6px 20px;
     transition: 0.5s;
 }
 
-.mainDeco .decoLeft a:hover {
+.mainDeco .decoLeft div > a:hover {
     background: #333;
     color: #ddd;
 }
@@ -463,6 +469,10 @@ header {
     position: relative;
     border-bottom: 1px solid #ddd;
     padding: 5px 0 5px 5px;
+}
+
+.mainCS .fBox .right > ul > li ul li:last-child {
+    border-bottom: 0;
 }
 
 .mainStore {
