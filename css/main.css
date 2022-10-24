@@ -36,9 +36,6 @@ p {
     line-height: 1.4;
 }
 
-header {
-}
-
 .header {
     position: fixed;
     top: 0;
@@ -88,9 +85,6 @@ header {
 }
 
 .mainVisual {
-}
-
-.mainVisual {
     position: relative;
     padding: 0;
 }
@@ -109,22 +103,6 @@ header {
     background: url(../img/mainVisual04.jpg) no-repeat bottom 10% center / cover;
     height: calc(100vh - 70px);
 }
-
-/* .swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
-    margin: 0 3px 60px 3px !important;
-    background: transparent;
-    border: 1px solid #ddd;
-    opacity: 1;
-    transition: 0.5s;
-}
-
-.swiper-pagination-bullet-active {
-    width: 30px;
-    border-radius: 5px;
-    background: #ddd;
-} */
 
 .mainVisual .scr {
     position: absolute;
@@ -162,9 +140,6 @@ header {
 
 .mainVisual .slogan p {
     font-size: 16px;
-}
-
-.mainStory {
 }
 
 .mainStory h2 {
@@ -215,9 +190,6 @@ header {
 }
 
 .mainBack {
-}
-
-.mainBack {
     padding: 0;
     background: url(../img/pebble26.jpg) no-repeat bottom 30% center/cover fixed;
     height: 500px;
@@ -250,9 +222,6 @@ header {
 
 .mainBack.on span {
     transform: translateY(0);
-}
-
-.mainDeco {
 }
 
 .mainDeco .detail {
@@ -353,9 +322,6 @@ header {
 }
 
 .mainSofa {
-}
-
-.mainSofa {
     background: #ced4da;
 }
 
@@ -404,9 +370,6 @@ header {
 .mainSofa p {
     font-size: 17px;
     font-weight: 500;
-}
-
-.mainCS {
 }
 
 .mainCS .fBox {
@@ -475,9 +438,6 @@ header {
     border-bottom: 0;
 }
 
-.mainStore {
-}
-
 .mainStore h3 {
     font-size: 21px;
     font-weight: 700;
@@ -529,22 +489,6 @@ header {
     padding: 10px 0 10px 10px;
     font-size: 15px;
     line-height: 1.2;
-}
-/* 
-
-
-
-
-푸터~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-
-
-
-
-*/
-
-.footer {
 }
 
 .footer {
